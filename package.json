@@ -1,0 +1,29 @@
+{
+  "name": "swagger-express-api-versioning",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API versioning implementation using Express JS and Swagger",
+  "keywords": [],
+  "author": "Moises Icaza <icazamartinez@gmail.com>",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "js-yaml": "^3.13.1",
+    "npm-run-all": "^4.1.5",
+    "request": "^2.88.0",
+    "swagger-express-mw": "^0.7.0",
+    "swagger-tools": "^0.10.4"
+  },
+  "scripts": {
+    "start": "babel-node index.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "deep-extend": "^0.5.1",
+    "lodash": ">=4.17.13"
+  }
+}
