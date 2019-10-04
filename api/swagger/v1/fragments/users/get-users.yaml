@@ -1,16 +1,3 @@
-swagger: '2.0'
-info:
-  version: '1.0'
-  title: API VERSIONING EXAMPLE
-host: 'localhost:10010'
-basePath: /api/v1
-schemes:
-  - http
-  - https
-consumes:
-  - application/json
-produces:
-  - application/json
 paths:
   /user:
     x-swagger-router-controller: user
@@ -24,14 +11,14 @@ paths:
       consumes:
         - application/json
       responses:
-        '200':
+        "200":
           description: Success
           schema:
             type: object
             example:
               status: OK
               code: 200
-              message: Success
+              message: 'Success'
               data:
                 status: OK
                 code: 200
@@ -43,16 +30,16 @@ paths:
                   userName: user2501
                   gender: M
                   maritalStatus: M
-                  birthDate: 1899-11-30T00:00:00.000Z
+                  birthDate: 0000-00-00
                   email: username1@gmail.com
                   country: US
                   city: FL
-                  province: null
-                  address: null
-                  zipCode: null
-                  phoneNumber: null
-                  countryCode: null
-                  lastLogin: null
+                  province:
+                  address:
+                  zipCode:
+                  phoneNumber:
+                  countryCode:
+                  lastLogin:
                   createdAt: '2018-12-11T02:14:20.179Z'
                   updatedAt: '2018-12-11T02:14:20.179Z'
                   role:
@@ -63,12 +50,4 @@ paths:
         default:
           description: Error
           schema:
-            $ref: '#/definitions/ErrorResponse'
-definitions:
-  ErrorResponse:
-    required:
-      - message
-    properties:
-      message:
-        type: string
-        example: Database error
+            $ref: "#/definitions/ErrorResponse"
